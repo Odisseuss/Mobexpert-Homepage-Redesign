@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1.5em;
+}
+h1 {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container-lookbook {
+  display: flex;
+}
+.container-lookbook img {
+  flex-grow: 1;
+}
+.carousel-item img {
+  height: 650px;
+}
+#header {
+  height: 150px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #ff6600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0% 0% 75% 75% / 0% 0% 40% 40%;
+}
+.carousel {
+  position: relative;
+  padding-top: 110px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 13px;
+}
+.buttons img {
+  width: 45px;
+}
+.buttons {
+  padding-top: 5px;
+}
+
+.nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+.logo {
+  align-self: flex-end;
+  padding-left: 15.5em;
+  padding-bottom: 1em;
+}
+.logo img {
+  height: 30px;
+  width: 180px;
+}
+
+.container-categorii {
+  display: flex;
+  flex-flow: row wrap;
+}
+.container-categorii div {
+  flex-grow: 1;
+  height: 380px;
+}
+.container-categorii a {
+  flex-grow: 1;
+  height: 380px;
+  width: 350px;
+}
+div.item img {
+  position: relative;
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+}
+div.item {
+  position: relative;
+  flex-grow: 1;
+}
+.overlay .icon {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  height: 79px;
+  width: 62px;
+}
+.overlay {
+  position: absolute;
+  flex-grow: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: 0.5s ease;
+  background-color: #ff6600;
+}
+
+.black {
+  background-color: #323232;
+}
+
+div.item p {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-flex;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 5.5em;
+}
+div.item:hover .overlay {
+  opacity: 0.6;
+  transition: 0.4s ease-in;
+}
+
+.menubtn {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  top: 5px;
+  left: 8px;
+
+  background-color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: 0.4s;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  margin-left: 9px;
+  position: relative;
+  left: 8px;
+  top: 3px;
+  width: 30px;
+  height: 5px;
+  background-color: #ff6600;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translateX(1px) rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translateX(1px) rotate(45deg) translate(-9px, -7px);
+}
+.change .menubtn {
+  position: fixed;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #323232;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  text-decoration: none;
+  color: #ff944d;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.container-smallcard {
+  display: flex;
+  padding-top: 40px;
+}
+.smallcard {
+  display: flex;
+}
+.container-detalii {
+  text-align: center;
+}
+.container-detalii h1 {
+  padding-bottom: 20px;
+}
+.container-detalii img {
+  width: 83px;
+  height: 83px;
+}
+.smallcard h1 {
+  font-size: 14px;
+}
+
+.smallcard-text h1 {
+  text-align: left;
+  padding: 0px;
+}
+.smallcard-text {
+  text-align: left;
+}
+
+.smallcard div img {
+  padding-right: 5px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  padding-top: 5px;
+}
+.footer-menu a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-menu a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-menu div h1 {
+  text-align: left;
+  color: #fff;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #323232;
+  margin-top: 65px;
+}
+.footer-menu div {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+#btn {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.newsletter div {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 15px;
+}
